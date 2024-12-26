@@ -1,0 +1,41 @@
+{
+    "name": "Income Entry",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "entry_date",
+            "fieldtype": "Date",
+            "label": "تاريخ القيد",
+            "reqd": 1
+        },
+        {
+            "fieldname": "amount",
+            "fieldtype": "Currency",
+            "label": "المبلغ",
+            "reqd": 1
+        },
+        {
+            "fieldname": "category",
+            "fieldtype": "Link",
+            "label": "الفئة",
+            "options": "Income Category",
+            "reqd": 1
+        },
+        {
+            "fieldname": "description",
+            "fieldtype": "Text",
+            "label": "الوصف"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "Union Executive",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+} 

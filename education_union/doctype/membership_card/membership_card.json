@@ -1,0 +1,36 @@
+{
+    "name": "Membership Card",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "member",
+            "fieldtype": "Link",
+            "label": "العضو",
+            "options": "Member",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "الحالة",
+            "options": "مدفوع\nغير مدفوع\nقيد الانتظار"
+        },
+        {
+            "fieldname": "issue_date",
+            "fieldtype": "Date",
+            "label": "تاريخ الإصدار"
+        },
+        {
+            "fieldname": "expiry_date",
+            "fieldtype": "Date",
+            "label": "تاريخ الانتهاء"
+        },
+        {
+            "fieldname": "payment_status",
+            "fieldtype": "Data",
+            "label": "حالة الدفع"
+        }
+    ]
+} 

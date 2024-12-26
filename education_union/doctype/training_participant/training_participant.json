@@ -1,0 +1,21 @@
+{
+    "name": "Training Participant",
+    "doctype": "DocType",
+    "istable": 1,
+    "module": "Education Union",
+    "fields": [
+        {
+            "fieldname": "member",
+            "fieldtype": "Link",
+            "label": "العضو",
+            "options": "Member",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "الحالة",
+            "options": "مسجل\nمؤكد\nملغى"
+        }
+    ]
+} 

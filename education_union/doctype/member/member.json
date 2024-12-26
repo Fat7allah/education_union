@@ -1,0 +1,78 @@
+{
+    "name": "Member",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "naming_rule": "By script",
+    "fields": [
+        {
+            "fieldname": "personal_section",
+            "fieldtype": "Section Break",
+            "label": "المعلومات الشخصية"
+        },
+        {
+            "fieldname": "full_name",
+            "fieldtype": "Data",
+            "label": "الاسم الكامل",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "age",
+            "fieldtype": "Int",
+            "label": "العمر"
+        },
+        {
+            "fieldname": "gender",
+            "fieldtype": "Select",
+            "label": "الجنس",
+            "options": "ذكر\nأنثى"
+        },
+        {
+            "fieldname": "phone",
+            "fieldtype": "Data",
+            "label": "رقم الهاتف"
+        },
+        {
+            "fieldname": "professional_section",
+            "fieldtype": "Section Break",
+            "label": "المعلومات المهنية"
+        },
+        {
+            "fieldname": "profession",
+            "fieldtype": "Data",
+            "label": "المهنة"
+        },
+        {
+            "fieldname": "workplace",
+            "fieldtype": "Data",
+            "label": "مكان العمل"
+        },
+        {
+            "fieldname": "education_level",
+            "fieldtype": "Data",
+            "label": "المستوى التعليمي"
+        },
+        {
+            "fieldname": "membership_section",
+            "fieldtype": "Section Break",
+            "label": "معلومات العضوية"
+        },
+        {
+            "fieldname": "membership_number",
+            "fieldtype": "Data",
+            "label": "رقم العضوية",
+            "unique": 1
+        },
+        {
+            "fieldname": "join_date",
+            "fieldtype": "Date",
+            "label": "تاريخ الانضمام"
+        },
+        {
+            "fieldname": "role",
+            "fieldtype": "Data",
+            "label": "الدور"
+        }
+    ]
+} 

@@ -1,0 +1,53 @@
+{
+    "name": "Training Course",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "course_name",
+            "fieldtype": "Data",
+            "label": "اسم الدورة",
+            "reqd": 1
+        },
+        {
+            "fieldname": "start_date",
+            "fieldtype": "Date",
+            "label": "تاريخ البداية",
+            "reqd": 1
+        },
+        {
+            "fieldname": "end_date",
+            "fieldtype": "Date",
+            "label": "تاريخ النهاية",
+            "reqd": 1
+        },
+        {
+            "fieldname": "participants",
+            "fieldtype": "Table",
+            "label": "المشاركون",
+            "options": "Training Participant"
+        },
+        {
+            "fieldname": "attendance",
+            "fieldtype": "Table",
+            "label": "الحضور",
+            "options": "Training Attendance"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "Union Executive",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "Regional Office Admin",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+} 

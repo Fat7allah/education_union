@@ -1,0 +1,20 @@
+body[data-rtl="1"] {
+    direction: rtl;
+}
+
+body[data-rtl="1"] .navbar-brand {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+body[data-rtl="1"] .form-group {
+    text-align: right;
+}
+
+body[data-rtl="1"] .control-label {
+    text-align: right;
+}
+
+.arabic-text {
+    font-family: 'Cairo', sans-serif;
+} 

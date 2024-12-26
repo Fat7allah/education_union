@@ -1,0 +1,27 @@
+{
+    "name": "Training Attendance",
+    "doctype": "DocType",
+    "istable": 1,
+    "module": "Education Union",
+    "fields": [
+        {
+            "fieldname": "date",
+            "fieldtype": "Date",
+            "label": "التاريخ",
+            "reqd": 1
+        },
+        {
+            "fieldname": "participant",
+            "fieldtype": "Link",
+            "label": "المشارك",
+            "options": "Member",
+            "reqd": 1
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "الحالة",
+            "options": "حاضر\nغائب\nمعتذر"
+        }
+    ]
+} 

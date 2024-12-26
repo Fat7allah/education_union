@@ -1,0 +1,19 @@
+{
+    "name": "Income Category",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "category_name",
+            "fieldtype": "Data",
+            "label": "اسم الفئة",
+            "reqd": 1
+        },
+        {
+            "fieldname": "description",
+            "fieldtype": "Text",
+            "label": "الوصف"
+        }
+    ]
+} 

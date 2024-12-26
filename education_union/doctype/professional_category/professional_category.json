@@ -1,0 +1,42 @@
+{
+    "name": "Professional Category",
+    "doctype": "DocType",
+    "module": "Education Union",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "category_name",
+            "fieldtype": "Data",
+            "label": "اسم الفئة",
+            "reqd": 1
+        },
+        {
+            "fieldname": "category_type",
+            "fieldtype": "Select",
+            "label": "نوع الفئة",
+            "options": "شباب عاملين\nنساء عاملات\nعمال بدوام كامل\nإداريين\nمهندسين\nمفتشين\nتعليم عالي\nمتقاعدين",
+            "reqd": 1
+        },
+        {
+            "fieldname": "members",
+            "fieldtype": "Table",
+            "label": "الأعضاء",
+            "options": "Professional Category Member"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "Union Executive",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "Regional Office Admin",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+} 
